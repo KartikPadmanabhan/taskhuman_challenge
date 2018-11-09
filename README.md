@@ -24,7 +24,7 @@ Step 1: You would create a DAG to fetch the users information from a [fake json 
 
 Step 2: The user data is in a nested JSON format. [Here](https://jsonplaceholder.typicode.com/users) is how it looks like.  Convert this data into a table format (for example python list of list object or a pandas dataframe).
 
-Step 3: Create a branch operator to accomplish the following conditions (**Please DO NOT use python operator**):
+Step 3: Create a branch operator to accomplish the following conditions (**Please DO NOT use python operator directly**):
 
 case A - Target Table Missing: Check if the target table to load the above user information exist in postgres destination. If the target table doesn't exist (for example when you load the data for the first time), create a table called `users` in the database `airflow` and load the data. 
 
